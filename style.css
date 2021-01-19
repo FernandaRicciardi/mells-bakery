@@ -1,0 +1,302 @@
+/********** PAGE STRUCTURE **********/
+
+body, ul, li, p {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+body {
+    background-color: rgb(15, 12, 10);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 900px;
+    margin: auto;
+    color: blanchedalmond;
+}
+
+@font-face {
+    font-family: Mell;
+    src: url(font/DancingScript-VariableFont_wght.ttf);
+}
+
+img {
+    box-shadow: 1px 1px 5px #888888;
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: blanchedalmond;
+    cursor: pointer;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+/********** HEAD STRUCTURE **********/
+
+header {
+    background-image: url(images/headcover2.jpg);
+    background-size: cover;
+    height: 220px;
+    margin-top: 10px;
+}
+
+#top {
+    height: 60px;
+    position: absolute;
+    top: 160px;
+    background-color: rgb(9, 5, 2, 0.7);
+}
+
+h1 {
+    padding-left: 35px;
+    padding-right: 146px;
+    position: relative;
+    bottom: 38px;
+    float: left;
+    font-family: Mell;
+    font-size: 50px;
+}
+
+ul {
+    text-transform: uppercase;
+    font-size: 1em;
+    display: inline;
+}
+
+li {
+    float: left;
+    padding: 15px;
+}
+
+/********** MAIN STRUCTURE **********/
+
+main {
+    margin-top: 10px;
+    padding: 10px;
+    overflow: auto;
+    background-color: rgba(34, 21, 10, 0.808);
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2.2em;
+    font-weight: lighter;
+    font-family: Mell;
+}
+
+section {
+    width: auto;
+    height: 200px;
+    margin: 10px;
+    background-color: rgba(143, 107, 79, 0.144);
+    border-radius: 10px;
+}
+
+section img {
+    height: 170px;
+    margin: 15px; 
+    float: left;
+}
+
+section h3 {
+    padding: 20px;
+    font-size: 1em;
+}
+
+section p {
+    margin-right: 15px;
+    font-size: 1em;
+    text-align: justify;
+}
+
+#sec2 img { 
+    float: right;  
+}
+
+#sec2 p {
+    margin-left: 15px;
+}
+
+/********** FOOTER STRUCTURE **********/
+
+footer {
+    color: white;
+    font-size: 10px;
+    opacity: 0.5;
+    text-align: center;
+}
+
+/********** ABOUT US STRUCTURE **********/
+
+#about {
+    overflow: auto;
+    height: auto;
+}
+
+#about img {
+    height: 400px;
+    float: left;
+}
+
+#about p {
+    padding: 10px;
+    margin: 10px;
+    line-height: 33px;
+}
+
+#about span {
+    font-family: Mell;
+    font-size: 25px;
+}
+
+/********** OUR FOOD STRUCTURE **********/
+
+#food1, #food2 {
+    width: auto;
+    height: auto;
+    overflow: auto;
+    background-color: transparent;
+}
+
+#food1 img {
+    height: 220px;
+    float: right;
+}
+
+#food2 img {
+    height: 250px;
+    float: left;
+}
+
+#food1 p, #food2 p {
+    padding: 15px;
+    margin: 0;
+    font-size: 1em;
+    text-align: justify;
+    line-height: 33px;
+}
+
+#ourfood {
+    background-color: rgba(143, 107, 79, 0.144);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/********** VISIT US STRUCTURE **********/
+
+#visit {
+    overflow: auto;
+    height: auto;
+}
+
+#visit img {
+    width: 500px;
+    height: auto;
+}
+
+#visit p {
+    padding: 15px;
+}
+
+/********** FORM STRUCTURE **********/
+
+#form1, #form2 {
+    width: 415px;
+    height: 490px;
+    overflow: auto;
+    float: left;
+    position: relative;
+}
+
+#form2 {
+    float: right;
+}
+
+#form1 p {
+    padding: 15px;
+    position: relative;
+}
+
+#form2 p {
+    position: relative;
+    font-family: Mell;
+    text-align: center;
+    font-size: 2em;
+    line-height: 60px;
+}
+
+#form2 h4 {
+    position: relative;
+    font-family: Mell;
+    text-align: center;
+    font-size: 3.1em;
+}
+
+#form1::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(images/form.jpg);
+    background-size: cover;
+    opacity: 0.1;
+}
+
+#form2::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(images/form2.jpg);
+    background-size: cover;
+    opacity: 0.1;
+}
+
+form {
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
+
+input {
+    padding: 15px;
+    margin: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    height: 5px;
+    width: 230px;
+    border: 1px solid blanchedalmond;
+}
+
+#message {
+    height: 100px;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+    width: 230px;
+    border: 1px solid blanchedalmond;
+}
+
+#send {
+    text-align: center;
+    line-height: 50%;
+    width: 80px;
+    height: 10px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+#send:hover {
+    background-color: chocolate;
+    border: chocolate;
+    color: white;
+    font-weight: bolder;
+}
